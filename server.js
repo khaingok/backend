@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://24560026:1621265437@cluster0.qexyw2y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
 mongoose.connect(mongoURI)
     .then(() => console.log('Đã kết nối thành công đến MongoDB!'))
     .catch(err => console.error('Lỗi kết nối MongoDB:', err));
