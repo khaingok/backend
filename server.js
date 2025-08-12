@@ -7,7 +7,11 @@ const app = express();
 const port = 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://frontend-2pst.onrender.com/menu.html',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
 app.use(express.json());
 
 // MongoDB connection
