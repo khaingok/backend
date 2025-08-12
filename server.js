@@ -8,7 +8,7 @@ const port = 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://frontend-2pst.onrender.com/menu.html',
+  origin: 'https://frontend-2pst.onrender.com',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
